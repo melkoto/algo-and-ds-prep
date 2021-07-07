@@ -1,4 +1,4 @@
-const binarySearch = (arr: number[], target: number): number => {
+const binarySearch = (arr: number[], target: number): number | null => {
   let start = 0,
     end = arr.length;
 

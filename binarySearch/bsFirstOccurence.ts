@@ -1,11 +1,11 @@
 // Find first occurrence of target
 
-const bsFirstNumber = (arr: number[], target: number): number => {
+const bsFirstOccurence = (arr: number[], target: number): number | null => {
   let start = 0,
     end = arr.length,
     mid: number,
     currentNum: number,
-    prevNumber;
+    prevNumber: number;
 
   while (start <= end) {
     mid = Math.floor(start + end / 2);
@@ -26,4 +26,4 @@ const bsFirstNumber = (arr: number[], target: number): number => {
   return null;
 };
 
-bsFirstNumber([1, 2, 2, 3, 4, 4, 4, 7, 10], 4);
+bsFirstOccurence([1, 2, 2, 3, 4, 4, 4, 7, 10], 4);
